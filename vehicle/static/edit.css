@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background:  ;
+  background: linear-gradient(90deg,  rgb(168, 233, 168) 0%,   rgb(209, 209, 99) 78%);
+  margin-top: 40px;
+  background-position: center;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3
+{
+position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  text-align:center;
+}

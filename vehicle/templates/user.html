@@ -1,0 +1,38 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="{% static 'user.css' %}">
+</head>
+<body>
+  <a href="{% url 'logout'%}"><button>logout</button></a>
+<h3>Vehicle Details</h3>
+<table id="customers">
+  <tr>
+    <th>Model</th>
+    <th>Number</th>
+    <th>Images</th>
+    <th>Type</th>
+    <th>Description</th>
+
+
+
+  </tr>
+  {%for i in k%}
+  <tr>
+    <td>{{i.model}}</td>
+    <td>{{i.number}}</td>
+    <td><img src="{{i.img.url}}"style="width:200px;height:200px;"></td>
+    <td>{{i.type}}</td>
+    <td>{{i.des}}</td>
+
+
+
+  </tr>
+  {%endfor%}
+</table>
+
+</body>
+</html>

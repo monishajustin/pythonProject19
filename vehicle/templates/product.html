@@ -1,0 +1,41 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="{% static 'product.css' %}">
+</head>
+<body>
+<h3>vehicle details</h3>
+<div class="main">
+<form method="POST" action="pro" enctype="multipart/form-data">
+  {%csrf_token%}
+  <div class="input-box">
+    <label>vehicle_name :</label><br><br>
+    <input type="text" placeholder="vehicle_name" name="name"><br><br>
+  </div>
+  <div class="input-box">
+    <label>vehicle_no :</label><br><br>
+    <input type="text" placeholder="vehicle_no" name="number"><br><br>
+  </div>
+    <div class="input-box">
+    <label>vehicle_image :</label><br><br>
+    <input type="file"  name="image"><br><br>
+    </div>
+  <div class="input-box">
+    <label>vehicle_type :</label><br><br>
+    <input type="text" placeholder="type" name="type"><br><br>
+  </div>
+  <div class="input-box">
+    <label>description :</label><br><br>
+    <input type="text" placeholder="des" name="des"><br><br>
+  </div>
+  <div class="input-box button"><br>
+    <input type="submit"><br><br>
+  </div>
+</form>
+  </div>
+
+</body>
+</html>

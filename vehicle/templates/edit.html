@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+  <link rel="stylesheet" href="{% static 'edit.css' %}">
+</head>
+<body>
+ <h3>vehicle details</h3>
+ <div class="main">
+<form method="POST" action="{% url 'edit' feel.id %}" enctype="multipart/form-data">
+
+  {%csrf_token%}
+   <div class="input-box">
+  <label>vehicle_name :</label><br><br>
+    <input type="text" placeholder="vehicle_name" name="name" value="{{feel.name}}"><br><br>
+   </div>
+   <div class="input-box">
+    <label>vehicle_no :</label><br><br>
+    <input type="text" placeholder="vehicle_no" name="number" value="{{feel.number}}"><br><br>
+   </div>
+   <div class="input-box">
+    <label>vehicle_image :</label><br><br>
+    <input type="file"  name="image" value="{{feel.image}}"><br><br>
+   </div>
+   <div class="input-box">
+    <label>vehicle_type :</label><br><br>
+    <input type="text" placeholder="type" name="type" value="{{feel.type}}"><br><br>
+   </div>
+   <div class="input-box">
+    <label>description :</label><br><br>
+    <input type="text" placeholder="des" name="des" value="{{feel.des}}"><br><br>
+   </div>
+    <div class="input-box button"><br>
+    <input type="submit"><br><br>
+    </div>
+</form>
+   </div>
+
+</body>
+</html>

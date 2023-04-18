@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><h3>Login Form</h3></div>
+        <form method="POST" action="login1">
+          <div class="row">
+            <i class="fas fa-user"></i>
+           <label>email</label>
+            <input type="email" placeholder="email or phone" name="email">
+          </div><br>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <label>password</label>
+            <input type="password" placeholder="password" name="password">
+          </div><br><br>
+          <div class="pass"><a href="#">Forgot password?</a></div><br>
+          <div class="row button">
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+           {%csrf_token%}
+
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

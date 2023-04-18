@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background:  ;
+  background: linear-gradient(90deg,  rgb(168, 233, 168) 0%,   rgb(209, 209, 99) 78%);
+  margin-top: 40px;
+  background-position: center;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3
+{
+position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  text-align:center;
+}
+.main {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 800px;
+  margin: auto;
+}
+form {
+  padding: 10px;
+  margin-top: 30px;
+
+}
+.main form .input-box{
+  height: 52px;
+  margin: 18px 0;
+
+}
+ form .input-box input{
+
+   text-align:center;
+   border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  }
+form .input-box{
+
+text-align:left;
+color: black;
+font-size: 15px;
+font-weight: 600;
+
+}
+.input-box.button input{
+  color: black;
+  letter-spacing: 1px;
+  border: none;
+  background:  rgb(245, 245, 245);
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #0e4bf1;
+}

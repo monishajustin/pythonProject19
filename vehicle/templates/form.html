@@ -1,0 +1,50 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="{% static 'form.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>REGISTRATION FORM</h3>
+        <form action="form1" method="POST">
+            {%csrf_token%}
+            <div class="input-box">
+                <label>username :</label>
+                <input type="text" placeholder="username" name="username">
+            </div><br>
+            <div class="input-box">
+            <label>mobile :</label>
+            <input type="number" placeholder="mobile" name="mobile">
+        </div><br>
+        <div class="input-box">
+            <label>address :</label>
+            <input type="text" placeholder="address" name="address">
+        </div><br>
+        <div class="input-box">
+            <label>email :</label>
+            <input type="email" placeholder="email" name="email">
+        </div><br>
+        <div class="input-box">
+            <label>password :</label>
+            <input type="password" placeholder="password" name="password">
+        </div><br>
+        <div class="policy">
+            <input type="checkbox">
+            <h2>I accept all terms & condition</h2>
+        </div>
+        <div class="input-box button"><br>
+            <input type="Submit" value="Register Now">
+        </div>
+        <div class="text"><br>
+            <h2>Already have an account? <a href="#">Login now</a></h2>
+        </div><br>
+        </form>
+    </div>
+</body>
+</html>
